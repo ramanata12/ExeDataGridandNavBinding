@@ -57,5 +57,10 @@ namespace ExeDataGridandNavBinding
             Form2 A = new Form2();
             A.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

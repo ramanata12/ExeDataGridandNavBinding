@@ -45,8 +45,7 @@ namespace ExeDataGridandNavBinding
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form1 V = new Form1();
-            V.Show();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
