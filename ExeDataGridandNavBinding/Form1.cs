@@ -54,13 +54,33 @@ namespace ExeDataGridandNavBinding
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 A = new Form2();
-            A.Show();
+            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+            {
+                MessageBox.Show("Data Tidak Boleh Kosong", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (textBox1.Text.Equals("nata") && textBox2.Text.Equals("abcd"))
+            {
+                Form2 V = new Form2();
+                V.Show();
+            }
+            else
+            {
+                MessageBox.Show("Periksa Kembali Username dan Password Anda !!!!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            {
+
+                textBox2.UseSystemPasswordChar = true;
+
+            }
         }
     }
 }
